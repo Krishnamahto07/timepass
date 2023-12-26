@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Sweart heart</title>
+    <style>
+        body{
+            background-color: #3f3535;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            height: 30vh;
+            width: 60vh;
+            background-color: #eb63d4;
+            border: 1px solid rgb(82, 60, 52);
+            color: white;
+            font-size: 20px;
+        }
+        .text{
+            margin-bottom: 60px;
+        }
+        @media (max-width:500px) {
+            .box{
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(to bottom right, rgb(213, 153, 163),rgb(239, 157, 239),rgb(237, 131, 95));
+                width: 100%;
+                border-radius: 0% 0% 60% 60%;
+                box-shadow: 2px 2px rgb(62, 60, 60);
+            }
+        }
+        .text{
+            margin: 10px;
+            padding: 10px;
+        }
+        .yes {
+            border-radius: 5px;
+            background-color: pink;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            }
+    .yes:hover {
+      animation: moveRandomly 1s ease-in-out infinite;
+      opacity: 0;
+    }
+    .yes::after:hover{
+        opacity: 0;
+    }
+
+    @keyframes moveRandomly {
+      25% {
+        transform: translate(calc(50vw - 100%), calc(50vh - 100%));
+      }
+      50% {
+        transform: translate(calc(50vw - 100%), calc(50vh - 100%));
+      }
+      75% {
+        transform: translate(calc(50vw - 100%), calc(50vh - 100%));
+      }
+      100% {
+        transform: translate(calc(50vw - 100%), calc(50vh - 100%));
+      }
+    }
+    button{
+        margin: 10%;
+    }
+    .no{
+        font-size: 16px;
+        margin-top: 30%;
+        margin-left:20%;
+        height: 45px;
+        width: 90px;
+        background-color: rgb(80, 175, 234);
+        border: 1px solid rgb(236, 214, 185);
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    .no:hover{
+        transform: scale(1.2);
+        background-color: #58eba2;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text"><strong>Hey dear❤️</strong><br>
+        can you broke up with your BF for me 😂 ??? </div>
+    </div>
+    <button class="no">Yes 😂</button>
+    <button class="yes">NO 🥀</button>
+</body>
+</html>
